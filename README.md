@@ -7,6 +7,8 @@ This setup allows using the same codebase for both local development and public 
 
 The root `jspm.json` file is used to dynamically map modules versions.
 
+**Note: All project flies imports (like `import {CountUper} from "./CountUper.js"`) should reference specifically .js files!** This is for compatibility with inbrowser ES Modules importing; Typescript understands such imports correctly.
+
 The compiled *.js code should be commited into the repository, the node_modules or jspm_modules may NOT be commited.
 
 `rxjs` is used as an example of a complex npm module usage and is NOT necessary for the templete to work. 
