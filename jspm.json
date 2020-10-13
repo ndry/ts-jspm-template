@@ -1,0 +1,24 @@
+{
+  "resolve": {
+    "@jspm/core": "npm:@jspm/core@1.1.1",
+    "es-module-shims": "npm:es-module-shims@0.6.0",
+    "rxjs": "npm:rxjs@7.0.0-beta.7"
+  },
+  "dependencies": {
+    "npm:@jspm/core@1.1.1": {
+      "source": "https://registry.npmjs.org/@jspm/core/-/core-1.1.1.tgz#sha512-5JjuDSzcxuxgzJ/+ynA7bcqZkI9CdDBERXOnDGdhphxNfmd4PkNl0RDE4hUH0+n8yEaz08Tdmjgxe7tlX3LmRA=="
+    },
+    "npm:es-module-shims@0.6.0": {
+      "source": "https://registry.npmjs.org/es-module-shims/-/es-module-shims-0.6.0.tgz#sha512-KbhvFoMD5r51T/aAwQODUHns0gerLYoWlWRWVxkMCg1tT2NV7ut70xuWKtG4ztZEXGuEjPrOzmOFQX0gpHbHUQ=="
+    },
+    "npm:rxjs@7.0.0-beta.7": {
+      "source": "https://registry.npmjs.org/rxjs/-/rxjs-7.0.0-beta.7.tgz#sha512-yzbYCaaQVDnGJkzlZ6g/vVdMpa7yZxD3WjkkQYvhi3fxLJgtujkU4vvyiZnU45hsfcUw5l9b3dccxD14xJhIdQ==",
+      "resolve": {
+        "tslib": "npm:tslib@1.14.1"
+      }
+    },
+    "npm:tslib@1.14.1": {
+      "source": "https://registry.npmjs.org/tslib/-/tslib-1.14.1.tgz#sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg=="
+    }
+  }
+}

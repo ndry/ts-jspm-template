@@ -1,0 +1,24 @@
+{
+  "name": "app",
+  "private": true,
+  "scripts": {
+    "build": "tsc",
+    "cbuild": "tsc --watch",
+    "start": "http-server . -p 41742 -o \"/public/?local\" -c-1"
+  },
+  "devDependencies": {
+    "http-server": "~0.12.3",
+    "jspm": "latest",
+    "typescript": "next"
+  },
+  "jspm": {
+    "dependencies": {
+      "rxjs": "7.0.0-beta.7"
+    },
+    "devDependencies": {
+      "@jspm/core": "^1.1.1",
+      "es-module-shims": "0.6.0"
+    }
+  },
+  "type": "module"
+}
