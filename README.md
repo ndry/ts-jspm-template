@@ -1,5 +1,5 @@
 # TypeScript web application template
-[Demo](https://ndry.github.io/ts-jspm-template/public/)
+[Demo](https://ndry.github.io/ts-jspm-template/public/index.html)
 
 This setup allows using the same codebase for both local development and public demo serving with static web server (e.g. using github pages).
 
