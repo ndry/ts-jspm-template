@@ -1,9 +1,9 @@
 # TypeScript web application template
 [Demo](https://ndry.github.io/ts-jspm-template/public/index.html)
 
-This setup allows using the same codebase for both local development and public demo serving with static web server (e.g. using github pages).
+This setup allows using the same codebase for both local development and public demo serving with static web server (e.g. github pages).
 
-`local` url parameter (like in `index.html?local`) flag is useed to decide whether to use public links or local files. The absence of that flag defaults to public links usage.
+`local` url parameter flag (like in `index.html?local`) is used to decide whether to use public links or local files. The absence of that flag defaults to public links usage.
 
 The root `jspm.json` file is used to dynamically map modules versions.
 
@@ -23,9 +23,9 @@ npm run build
 npm start
 ```
 
-## Add new dependencies
+## Add new dependency
 
-1. Use `package.json#jspm.dependencies` to add new dependencies which should be imported in a browser
+1. Use `package.json#jspm.dependencies` to add new dependency which should be imported in a browser
 1. Run `jspm i`
 1. Manually add types path into `tsconfig.json#compilerOptions.paths`
 1. Manually add bundle path into `initConfig.import` in `public/index.html`
