@@ -8,12 +8,19 @@
         }
       };
     </script>
-    <script src="init.js"></script>
+    <!-- <script src="init.js"></script> -->
     <title>ts-jspm-template</title>
 </head>
 <body>
   <div>Everything worked fine, if you see the countup below</div>
   <div id="content">This text should be replaced with dynamic countup if everything worked fine</div>
-  <script type="module-shim" src="./app/index.js"></script>
+  <!-- <script type="module-shim" src="./app/index.js"></script> -->
+  <script type="module">
+    import {loadModule} from 'https://klesun.github.io/ts-browser/src/ts-browser.js';
+    (async () => {
+      const indexModule = await loadModule('../src/index.ts');
+      indexModule.default(document.getElementById('composeCont'));
+    })();
+  </script>
 </body>
 </html>

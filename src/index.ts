@@ -1,7 +1,10 @@
-import {CountUper} from "./CountUper.js";
-import rxjs from "rxjs";
+import {CountUper} from "./CountUper";
+// import rxjs from "rxjs";
 
-const countUper = new CountUper(document.getElementById("content")!);
-const subject = new rxjs.Subject();
-subject.subscribe(() => countUper.tick());
-setInterval(() => subject.next(undefined), 300);
+export default () => {
+    const countUper = new CountUper(document.getElementById("content")!);
+    // const subject = new rxjs.Subject();
+    // subject.subscribe(() => countUper.tick());
+    // setInterval(() => subject.next(undefined), 300);
+    setInterval(() => countUper.tick(), 300);
+}
