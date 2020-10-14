@@ -1,6 +1,3 @@
-import { count } from "console";
-
-
 export class CountUper {
     constructor(
         public el: HTMLElement,
